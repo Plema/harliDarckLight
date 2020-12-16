@@ -1,0 +1,36 @@
+@import "libs/variables";
+@import "libs/mixin";
+@import "libs/keyframes";
+
+section{
+  .all-FAQ{
+    .right-part{
+      .FAQ_nav{
+        display: none;
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  main{
+    .right-fixed{
+
+    }
+    .navigation{
+      .theme_color{
+        display: none;
+      }
+    }
+  }
+  header{
+
+    .all-head{
+      .right-part{
+        .theme_color{
+
+        }
+      }
+    }
+  }
+
+}

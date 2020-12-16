@@ -1,0 +1,238 @@
+.all-info-invest{
+  padding-bottom: 20px;
+  .title-bitcoin{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    img{
+      margin-right: 20px;
+      max-width: 50px;
+      width: 100%;
+    }
+    h4{
+      text-transform: none;
+      font-family: 'Montserrat';
+      font-weight: 700;
+    }
+  }
+  .two-part{
+    padding-bottom: 25px;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+    .left-part{
+      margin:0 auto 25px;
+      max-width: 440px;
+      width: 100%;
+      p{
+        margin-bottom: 5px;
+        strong{
+          color: #ffffff;
+        }
+        span{
+          color: #ff3239;
+        }
+      }
+      .big-marg{
+        margin-bottom: 25px;
+      }
+      .inp{
+        max-width: 440px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        position: relative;
+        padding: 0;
+        input{
+          margin-bottom: 0;
+          border: 1px solid #5d6989;
+          background: transparent;
+          padding: 10px 30px 10px 10px;
+          min-width: 290px;
+          max-width: 440px;
+          width: 100%;
+          color: #ffffff;
+        }
+        .im{
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 7px;
+          margin: auto;
+          width: 16px;
+          height: 16px;
+          cursor: pointer;
+          padding: 0;
+          img{
+            position: absolute;
+          }
+          .hov{
+            opacity: 0;
+          }
+          &:hover{
+            .hov{
+              opacity: 1;
+            }
+            .norm{
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+    .qr-code{
+      padding: 15px;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(21, 26, 34, 0.15);
+      max-width: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
+  }
+  .go-back{
+    transition: 0.5s;
+    position: relative;
+    padding-bottom: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    p{
+      transform: rotate(180deg);
+      i{
+        font-size: 9px;
+        color: #ffffff;
+        transition: 0.5s;
+      }
+    }
+    span{
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 300;
+      transition: 0.5s;
+      margin-left: 7px;
+    }
+    &:hover{
+      span{
+        color: #ff3239;
+      }
+      i{
+        color: #ff3239;
+      }
+    }
+  }
+}
+.light_page{
+  .all-info-invest{
+    .title-bitcoin{
+      h4{
+        color: #232a3b;
+      }
+    }
+    .two-part{
+      border-bottom: 1px solid #232a3b;
+      .left-part{
+        p{
+          strong{
+            color: #232a3b;
+          }
+          span{
+            color: #ff3239;
+          }
+        }
+        .inp{
+          input{
+            border: 1px solid #5d6989;
+            color: #232a3b;
+          }
+          .hov{
+            opacity: 0;
+          }
+          &:hover{
+            .hov{
+              opacity: 1;
+            }
+            .norm{
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+      .qr-code{
+        background: #ffffff;
+      }
+    }
+    .go-back{
+      p{
+        i{
+          color: #232a3b;
+        }
+      }
+      span{
+        color:#232a3b;
+      }
+      &:hover{
+        span{
+          color: #ff3239;
+        }
+        i{
+          color: #ff3239;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .all-info-invest{
+    .two-part{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 50px;
+      .left-part{
+        margin: 0;
+        margin-right: 15px;
+        margin-bottom: 0;
+        div{
+          padding: 15px;
+          justify-content: space-between;
+        }
+        .inp{
+          input{
+            padding: 15px 40px 15px 15px;
+          }
+          .im{
+            right: 15px;
+          }
+        }
+      }
+      .qr-code{
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .all-info-invest{
+    .title-bitcoin{
+      margin-bottom: 65px;
+      h4{
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .all-info-invest{
+    .two-part{
+      .left-part{
+        margin-right: 130px;
+      }
+    }
+  }
+}
